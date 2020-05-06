@@ -2,9 +2,9 @@ fetch("https://api.covid19india.org/data.json").then((el)=>
 {
     return el.json()}).then(el=>{
     var len=el.statewise.length;
-    console.log(el.statewise);
-    var data=el.statewise[1];
-    console.log(data);
+ 
+    var data=el.statewise[0];
+ 
     var tb1=document.getElementById("tab");
 var row=tb1.insertRow();
 var cel1=row.insertCell(0);
